@@ -1,9 +1,16 @@
-remote_theme: "mmistakes/minimal-mistakes@4.17.2"
-
-# site info
+# Site Info
 title: "Discovery One"
+#subtile
+#description
+name: "Zepp"
+url: "https://zepplu.github.io"
+baseurl: "/"
 
-# plugins (previously gems:)
+# Appearance
+remote_theme: "mmistakes/minimal-mistakes@4.17.2"
+minimal_mistakes_skin: "dirt"
+
+# Plugins (previously gems:)
 plugins:
   - jekyll-paginate
   - jekyll-sitemap
