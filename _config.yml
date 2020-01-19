@@ -9,8 +9,13 @@ baseurl: "/"
 # Appearance
 remote_theme: "mmistakes/minimal-mistakes@4.17.2"
 minimal_mistakes_skin: "dirt"
+timezone: Asia/Shanghai
 include:
   - _pages
+
+# Home
+paginate: 10
+paginate_path: /page:num/
 
 # Taxonomy (GitHub pages supports liquid only)
 category_archive:
