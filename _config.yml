@@ -10,13 +10,18 @@ baseurl: "/"
 remote_theme: "mmistakes/minimal-mistakes@4.17.2"
 minimal_mistakes_skin: "dirt"
 timezone: Asia/Shanghai
+locale: "zh-CN"
 search: true  # search button at top
+search_full_content: true
 include:
   - _pages
 
 # Home
 paginate: 10
 paginate_path: /page:num/
+
+# Posts
+permalink: /articles/:title/
 
 # Bottom Bar
 footer:
