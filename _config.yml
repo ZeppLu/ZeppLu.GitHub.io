@@ -17,6 +17,13 @@ include:
 paginate: 10
 paginate_path: /page:num/
 
+# Bottom Bar
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/zepplu"
+
 # Taxonomy (GitHub pages supports liquid only)
 category_archive:
   type: liquid
