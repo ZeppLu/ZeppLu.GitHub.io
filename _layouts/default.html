@@ -10,7 +10,17 @@
 -->
 <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
   <head>
+    <!-- Hanzi.pro stylesheet, should be loaded before any other stylesheets -->
     <link rel="stylesheet" media="all" href="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.css">
+    <!-- KaTeX stylesheet and script (can be deferred) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+    <!-- KaTeX extension, enables user to copy original TeX command -->
+    <link href="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.css" rel="stylesheet" type="text/css">
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script>
+    <!-- KaTeX extension, renders elements in <script type="math/tex"> -->
+    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mathtex-script-type.min.js"></script>
+
     {% include head.html %}
     {% include head/custom.html %}
   </head>
@@ -38,7 +48,11 @@
     </div>
 
     {% include scripts.html %}
+
+    <!-- Hanzi.pro scripts for rendering, should be placed at the bottom of <body> -->
     <script src="//cdnjs.cloudflare.com/ajax/libs/Han/3.3.0/han.min.js"></script>
+    <!-- Performs full rendering process on main text only,
+         for texts otherwhere, inserting spaces is enough -->
     <script>
       Han(document.body).initCond().renderHWS();
       Han(document.querySelector('.page__content')).render();
