@@ -40,3 +40,14 @@ toc: true
 CSS文件则借助于[Sass](https://sass-lang.com/)，粗略地讲，可以认为这是一个CSS的模板，
 有着变量、包含、展开、函数计算等功能。
 相关的Sass文件都放在`_sass`下，经过编译生成单一的`min.css`文件会被放置在每一个静态网页中。
+
+## Theme: Minimal Mistakes
+
+Jekyll主题其实就是上面所说的那一堆HTML与CSS模板。
+权衡多方后，我最终选用了[Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes)这个主题，
+原因也很简单：可定制选项丰富的同时，还提供了内容详实的文档（再次说明了文档对开源项目的作用）。
+它最棒的是，作者在编写了[文档](https://mmistakes.github.io/minimal-mistakes/)的同时，
+还额外给出了一个实际利用GitHub pages + remote theme搭建而成的
+[demo博客](https://mmistakes.github.io/mm-github-pages-starter/)，可谓感人肺腑，救小白于水火之中。
+
+## Improvements
