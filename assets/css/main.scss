@@ -1,0 +1,26 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+// Mexico Light scheme from https://github.com/drzel/base16-mexico-light-scheme
+$base00: #f8f8f8;
+$base01: #e8e8e8;
+$base02: #d8d8d8;
+$base03: #b8b8b8;
+$base04: #585858;
+$base05: #383838;
+$base06: #282828;
+$base07: #181818;
+$base08: #ab4642;
+$base09: #dc9656;
+$base0a: #f79a0e;
+$base0b: #538947;
+$base0c: #4b8093;
+$base0d: #7cafc2;
+$base0e: #96609e;
+$base0f: #a16946;
+
+@import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
+@import "minimal-mistakes"; // main partials
