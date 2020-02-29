@@ -1,0 +1,13 @@
+{% if page.music %}
+  <!-- Required by music player widget -->
+  <!-- require APlayer -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+  <!-- require MetingJS -->
+  <script src="https://cdn.jsdelivr.net/npm/meting@2.0.1/dist/Meting.min.js"></script>
+  <meting-js
+    fixed="true"
+    autoplay="true"
+    auto="{{ page.music }}">
+  </meting-js>
+{% endif %}
