@@ -22,5 +22,15 @@ $base0d: #7cafc2;
 $base0e: #96609e;
 $base0f: #a16946;
 
+// smaller font size
+//$type-size-1: 36px; //1.9528em; //2.441em !default; // ~39.056px
+//$type-size-2: 28px; //1.5624em; //1.953em !default; // ~31.248px
+//$type-size-3: 22px; //1.2500em; //1.563em !default; // ~25.008px
+//$type-size-4: 16px; //1.0000em; //1.25em !default; // ~20px
+//$type-size-5: 14px; //0.8000em; //1em !default; // ~16px
+//$type-size-6: 11px; //0.6000em; //0.75em !default; // ~12px
+//$type-size-7: 10px; //0.5500em; //0.6875em !default; // ~11px
+//$type-size-8:  9px; //0.5000em; //0.625em !default; // ~10px
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
