@@ -58,5 +58,6 @@ Jekyll主题其实就是上面所说的那一堆HTML与CSS模板。
 
 - [改进汉字与拉丁文字的混合排版](/articles/hanzi-typography-jekyll/)；
 - [数学公式渲染](/articles/katex-jekyll/)；
-- [音乐播放器](/articles/music-player/)；
-- [弃用remote theme](https://github.com/ZeppLu/ZeppLu.GitHub.io/commit/97c59ebaa4303622d7b778a4d21952fdf5742229)，这还顺便解决了一些边边角角的小问题。至于主题的更新，完全可以效仿早期的Linus，手动打patch升级。
+- 音乐播放器；
+- [弃用remote theme](https://github.com/ZeppLu/ZeppLu.GitHub.io/commit/97c59ebaa4303622d7b778a4d21952fdf5742229)，
+  目的是为了能更方便地修改主题。至于主题的更新，完全可以效仿早期的Linus，手动打patch升级。
