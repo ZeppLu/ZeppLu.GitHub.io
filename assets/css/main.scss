@@ -32,5 +32,12 @@ $base0f: #a16946;
 //$type-size-7: 10px; //0.5500em; //0.6875em !default; // ~11px
 //$type-size-8:  9px; //0.5000em; //0.625em !default; // ~10px
 
+$left-padding-width-narrow: 100px;
+$left-padding-width: 150px;
+$left-padding-width-wide: 200px;
+$right-sidebar-width-narrow: 300px;
+$right-sidebar-width: 450px;
+$right-sidebar-width-wide: 600px;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
