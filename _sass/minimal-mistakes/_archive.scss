@@ -45,7 +45,7 @@
 
 .archive__item-title {
   margin-bottom: 0.25em;
-  font-family: $sans-serif-narrow;
+  font-family: $serif;
   line-height: initial;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -452,4 +452,10 @@
 	.feature__wrapper {
 		display: inline-block;
 	}
+}
+
+/* Place inside a home layout, to remove space between top bar and posts */
+
+.layout--home .list__item:first-child {
+    margin-top: -2em;
 }

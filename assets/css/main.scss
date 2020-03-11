@@ -4,6 +4,10 @@
 
 @charset "utf-8";
 
+/*
+ * Syntax Highlight
+ */
+
 // Mexico Light scheme from https://github.com/drzel/base16-mexico-light-scheme
 $base00: #f8f8f8;
 $base01: #e8e8e8;
@@ -22,22 +26,40 @@ $base0d: #7cafc2;
 $base0e: #96609e;
 $base0f: #a16946;
 
-// smaller font size
-//$type-size-1: 36px; //1.9528em; //2.441em !default; // ~39.056px
-//$type-size-2: 28px; //1.5624em; //1.953em !default; // ~31.248px
-//$type-size-3: 22px; //1.2500em; //1.563em !default; // ~25.008px
-//$type-size-4: 16px; //1.0000em; //1.25em !default; // ~20px
-//$type-size-5: 14px; //0.8000em; //1em !default; // ~16px
-//$type-size-6: 11px; //0.6000em; //0.75em !default; // ~12px
-//$type-size-7: 10px; //0.5500em; //0.6875em !default; // ~11px
-//$type-size-8:  9px; //0.5000em; //0.625em !default; // ~10px
+/*
+ * Layout
+ */
 
+// Remove left sidebar and enlarge right sidebar
 $left-padding-width-narrow: 100px;
 $left-padding-width: 150px;
 $left-padding-width-wide: 200px;
 $right-sidebar-width-narrow: 300px;
 $right-sidebar-width: 450px;
 $right-sidebar-width-wide: 600px;
+
+// Enlarge maximum width
+$max-width: 1600px;
+
+/*
+ * Font Styles
+ */
+
+// Mac users are likely to also have MS-fonts installed, so Apple-fonts should be placed above
+$sans-serif: -apple-system, 'Roboto', 'Open Sans', 'Source Sans Pro', 'Noto Sans',
+             'Helvetica', 'Arial', 'Linux Biolinum', 'Liberation Sans',
+             'PingFang SC', 'Hiragino Sans GB', 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN',
+             'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'Microsoft YaHei', 'Microsoft JhengHei',
+             'ST Heiti', 'SimHei',
+             sans-serif;
+// English serif fonts are somewhat bolder, so 'Medium' is added (so as 'STZhongsong')
+$serif: 'Georgia', 'Times New Roman', 'Linux Libertine', 'Liberation Serif',
+        'Roboto Slab', 'Source Serif Pro', 'Noto Serif',
+        'Source Han Serif SC Medium', 'Source Han Serif CN Medium', 'Noto Serif CJK SC Medium',
+        'STZhongsong', 'STSong', 'AR PL New Sung', 'NSimSun', 'SimSun', 'PMingLiU', 'MingLiU',
+        serif;
+$header-font-family: $serif;
+
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
