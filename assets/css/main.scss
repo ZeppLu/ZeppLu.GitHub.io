@@ -50,17 +50,16 @@ $max-width: 1600px;
  */
 
 // Mac users are likely to also have MS-fonts installed, so Apple-fonts should be placed above
-$sans-serif: -apple-system, 'Roboto', 'Open Sans', 'Source Sans Pro', 'Noto Sans',
-             'Helvetica', 'Arial', 'Linux Biolinum', 'Liberation Sans',
+$sans-serif: -apple-system, 'Verdana', 'Roboto', 'Open Sans',
+             'Source Sans Pro', 'Noto Sans', 'Helvetica', 'Arial',
              'PingFang SC', 'Hiragino Sans GB', 'Noto Sans CJK SC', 'Source Han Sans SC', 'Source Han Sans CN',
              'Wenquanyi Micro Hei', 'WenQuanYi Zen Hei', 'Microsoft YaHei', 'Microsoft JhengHei',
-             'ST Heiti', 'SimHei',
              sans-serif;
 // English serif fonts are somewhat bolder, so 'Medium' is added (so as 'STZhongsong')
-$serif: 'Georgia', 'Times New Roman', 'Linux Libertine', 'Liberation Serif',
-        'Roboto Slab', 'Source Serif Pro', 'Noto Serif',
+$serif: 'Georgia', 'Source Serif Pro', 'Noto Serif',
+        'Palatino', 'Times New Roman',
         'Source Han Serif SC Medium', 'Source Han Serif CN Medium', 'Noto Serif CJK SC Medium',
-        'STZhongsong', 'STSong', 'AR PL New Sung', 'NSimSun', 'SimSun', 'PMingLiU', 'MingLiU',
+        'STZhongsong',// 'AR PL New Sung', 'NSimSun', 'SimSun', 'PMingLiU', 'MingLiU',
         serif;
 $header-font-family: $serif;
 
