@@ -1,3 +1,24 @@
+{% if site.no_exist %}
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js"></script>
+<!-- KaTeX extension, enables user to copy original TeX command -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js"></script>
+<!-- KaTeX extension, renders elements in <script type="math/tex"> -->
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mathtex-script-type.min.js"></script>
+<!-- Hanzi.pro scripts for rendering, should be placed at the bottom of <body> -->
+<script src="https://cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.js"></script>
+{% endif %}
+
+{% if site.footer_scripts_deferred %}
+  {% for script in site.footer_scripts_deferred %}
+    {% if script contains "://" %}
+      {% capture script_path %}{{ script }}{% endcapture %}
+    {% else %}
+      {% capture script_path %}{{ script | relative_url }}{% endcapture %}
+    {% endif %}
+    <script defer src="{{ script_path }}"></script>
+  {% endfor %}
+{% endif %}
+
 {% if site.footer_scripts %}
   {% for script in site.footer_scripts %}
     {% if script contains "://" %}

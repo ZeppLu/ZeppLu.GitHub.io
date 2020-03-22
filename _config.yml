@@ -55,6 +55,31 @@ defaults:
     values:
       layout: single
 
+# JavaScripts
+# TODO: remove fitvids, magnific-popup, throttle-debounce
+# TODO: remove jquery dependence
+footer_scripts:
+  - https://cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.js
+  - https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js
+  - https://cdn.jsdelivr.net/gh/davatron5000/FitVids.js/jquery.fitvids.min.js
+  - https://cdn.jsdelivr.net/gh/lukejacksonn/GreedyNav/greedynav.min.js
+  - https://cdn.jsdelivr.net/gh/dimsemenov/Magnific-Popup/dist/jquery.magnific-popup.min.js
+  - https://cdn.jsdelivr.net/gh/cowboy/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js
+  - https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.2/dist/smooth-scroll.min.js
+  - https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@5.1.1/dist/gumshoe.min.js
+  - https://cdn.jsdelivr.net/gh/zepplu/zepplu.github.io/assets/js/setup.js  # requires all above
+footer_scripts_deferred:
+  - https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/mathtex-script-type.min.js
+
+# Stylesheets
+stylesheets:
+  - https://cdn.jsdelivr.net/npm/han-css@3.3.0/dist/han.min.css  # should be first
+  - https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.css
+  - https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.css
+  - /assets/css/main.css
+
 # Plugins (previously gems:)
 plugins:
   - jekyll-paginate

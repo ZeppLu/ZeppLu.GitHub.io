@@ -158,6 +158,10 @@ pre {
 
 pre {
   overflow-x: auto; /* add scrollbars to wide code blocks*/
+
+  > code {
+    font-size: $code-font-size;
+  }
 }
 
 p > code,

@@ -132,4 +132,8 @@ $(document).ready(function() {
       $(this).prepend(anchor);
     }
   });
+
+  // Make Chinese & Latin letters look well together
+  Han(document.body).initCond().renderHWS();
+  Han(document.querySelector('.page__content')).render();
 });
