@@ -49,6 +49,8 @@ defaults:
       share: false
       related: true
       read_time: true
+      toc: true
+      toc_sticky: true
   - scope:  # special pages
       path: "_pages"
       type: pages
@@ -67,7 +69,8 @@ footer_scripts:
   - https://cdn.jsdelivr.net/gh/cowboy/jquery-throttle-debounce/jquery.ba-throttle-debounce.min.js
   - https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@16.1.2/dist/smooth-scroll.min.js
   - https://cdn.jsdelivr.net/gh/cferdinandi/gumshoe@5.1.1/dist/gumshoe.min.js
-  - https://cdn.jsdelivr.net/gh/zepplu/zepplu.github.io/assets/js/setup.js  # requires all above
+  # https://cdn.jsdelivr.net/gh/zepplu/zepplu.github.io/assets/js/setup.js  # requires all above
+  - /assets/js/setup.js  # requires all above
 footer_scripts_deferred:
   - https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/katex.min.js
   - https://cdn.jsdelivr.net/npm/katex@0.11.1/dist/contrib/copy-tex.min.js
