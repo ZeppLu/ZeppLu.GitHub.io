@@ -61,6 +61,19 @@ $(document).ready(function() {
     durationMax: 500
   });
 
+  // APlayer introduces webpack, which in turns introduces
+  // out-of-date smoothscroll.js (not smooth-scroll.js!),
+  // which does not support hashtag links containing Chinese.
+  // This few lines duplicate a node and replace the original one,
+  // so as to remove all event listeners w/o having their refs
+  // SEE: https://github.com/MoePlayer/APlayer/issues/242#issuecomment-602471423
+  // NOTE: should be placed before gumshow execution
+  (function() {
+    var toc_menu = document.querySelector('.toc__menu');
+    var new_toc_menu = toc_menu.cloneNode(true);  // `true': deep clone
+    toc_menu.parentNode.replaceChild(new_toc_menu, toc_menu);
+  })();
+
   // Gumshoe scroll spy init
   if($("nav.toc").length > 0) {
     var spy = new Gumshoe("nav.toc a", {
