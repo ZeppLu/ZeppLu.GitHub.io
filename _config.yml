@@ -47,7 +47,7 @@ defaults:
       layout: single
       comments: false  # TODO: use staticman
       share: false
-      related: true
+      related: false
       read_time: true
       toc: true
       toc_sticky: true
